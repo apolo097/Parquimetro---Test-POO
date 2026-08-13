@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parquímetro</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="styles.css">   
+    <script src="script.js" defer></script> 
+  </head>
+  <body>
+    <div class="container">
+      <div class="tittle">
+        <h1>Parquímetro</h1>
+        <p>
+          Informe um valor e veremos quanto tempo seu veículo pode ficar
+          conosco.
+        </p>
+      </div>
+
+      <div class="tablePrice">
+        <table>
+          <tr>
+            <!-- Table Row -->
+            <td>Valor</td>
+            <td>Tempo</td>
+          </tr>
+          <tr>
+            <td>R$ 1,00</td>
+            <td>30 Minutos</td>
+          </tr>
+          <tr>
+            <td>R$ 1,75</td>
+            <td>60 Minutos</td>
+          </tr>
+          <tr>
+            <td>R$ 3,00</td>
+            <td>120 Minutos</td>
+          </tr>
+        </table>
+        <p class="alert">** Tempo máximo de permanencia: 120 minutos.</p>
+      </div>
+
+      <div class="parquimetro">
+
+        <label for="valor"> Digite o valor:</label> <br>      
+
+        <div class="input">
+            <span>R$</span>
+            <input type="text" id="valor" inputmode="decimal" placeholder="0,00" />            
+        </div>
+
+        <button class="btn" id="calcular">Calcular</button>
+
+        <p id="resultado"></p>
+    </div>
+  </body>
+</html>

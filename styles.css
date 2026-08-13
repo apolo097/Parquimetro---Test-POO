@@ -1,0 +1,64 @@
+.container {
+    margin-top: 10%;
+    background-color: rgb(97, 97, 74);
+    width: fit-content;
+    height: fit-content;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-lg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.tittle {
+    grid-column: span 2;
+    text-align: center;
+    align-self: center
+}
+
+.tablePrice {
+    
+    text-align: center;
+    align-self: center;
+}
+
+.tablePrice p {
+    font-style: oblique;
+    font-size: small;
+}
+
+td {
+    width: 100px;
+}
+
+table,
+th,
+td {
+    border: 2px solid var(--color-gray-800);
+}
+
+.parquimetro {    
+    background-color: gray;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 5px;
+}
+label{
+    font-size: x-large;
+    margin-bottom: -20px;
+}
+
+input{
+    text-align: center;
+    font-size: x-large;
+    align-self: center;    
+}
+
+.input{
+    padding: 10px;
+    
+}

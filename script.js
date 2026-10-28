@@ -1,6 +1,6 @@
 class Parquimetro {
     constructor(valor) {
-        this.valor = valor;
+        this.valor = valor; //propriedade do objeto = parametro que chegou --- Basicamente guardo em this.valor o valor que chegou para usar nos metodos
     }
 
     calcularTempo() {

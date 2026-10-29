@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parquímetro</title>
     <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="styles.css">   
-    <script src="script.js" defer></script> 
+    <link rel="stylesheet" href="styles.css">    
+    <script type="module" src="./js/app.js"></script>
   </head>
   <body>
     <div class="container">
@@ -20,25 +20,14 @@
 
       <div class="tablePrice">
         <table>
-          <tr>
-            <!-- Table Row -->
-            <td>Valor</td>
-            <td>Tempo</td>
-          </tr>
-          <tr>
-            <td>R$ 1,00</td>
-            <td>30 Minutos</td>
-          </tr>
-          <tr>
-            <td>R$ 1,75</td>
-            <td>60 Minutos</td>
-          </tr>
-          <tr>
-            <td>R$ 3,00</td>
-            <td>120 Minutos</td>
-          </tr>
+          <tbody id="tabela-precos">
+              <tr>
+                <td>Valor</td>
+                <td>Tempo</td>
+              </tr>
+          </tbody>
         </table>
-        <p class="alert">** Tempo máximo de permanencia: 120 minutos.</p>
+        <p class="alert">** Tempo máximo de permanencia: <span id="tempo-maximo"> </span> minutos.</p>
       </div>
 
       <div class="parquimetro">
